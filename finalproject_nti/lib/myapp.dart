@@ -1,5 +1,5 @@
 import 'package:finalproject_nti/feature/auth/cubit/cubit/auth_cubit.dart';
-import 'package:finalproject_nti/feature/auth/view/screens/register.dart';
+import 'package:finalproject_nti/feature/auth/view/screens/signup.dart';
 import 'package:finalproject_nti/feature/cart/cubit/cubit/cart_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: const Register(),
+        home: const SignUp(),
       ),
     );
   }

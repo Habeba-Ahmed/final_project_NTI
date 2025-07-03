@@ -1,4 +1,7 @@
+import 'package:finalproject_nti/core/constant/color.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/constant/style.dart';
 
 class CustomDroupDownMenu extends StatelessWidget {
   final TextEditingController genderController;
@@ -9,9 +12,13 @@ class CustomDroupDownMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return DropdownButtonFormField<String>(
       value: null,
-      decoration: const InputDecoration(
+      decoration: InputDecoration(
+        hintStyle: AppTextStyle.hintText,
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+        filled: true,
+        fillColor: AppColor.fillcolor,
+        prefixIcon: Icon(Icons.transgender_outlined),
         hintText: 'Gender',
-        border: OutlineInputBorder(),
         contentPadding: EdgeInsets.symmetric(horizontal: 12),
       ),
       items: ['male', 'female'].map((gender) {
